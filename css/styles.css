@@ -110,12 +110,22 @@ body {
   margin-left: auto;
   margin-right: 50px;
 }
+
 .page-header .mail,
 .page-header .tel {
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-phone {
+  fill: currentColor;
 }
 .page-header .mail:hover,
 .page-header .mail:focus,
@@ -197,7 +207,6 @@ body {
 .benefits-list {
   display: flex;
 }
-/* WhHY&&&&& */
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
