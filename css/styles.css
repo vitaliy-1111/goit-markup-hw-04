@@ -400,6 +400,9 @@ body {
 .button-filters:focus {
   color: #ffffff;
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .projects-list {
   display: flex;
@@ -442,8 +445,17 @@ body {
 }
 .projects-text {
   padding: 20px 24px;
+  color: var(--main-text-color);
 
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+.project-link {
+  display: block;
+}
+.project-link:focus,
+.project-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
