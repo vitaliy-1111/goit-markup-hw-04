@@ -268,6 +268,11 @@ body {
 .team-list {
   display: flex;
 }
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -289,11 +294,37 @@ body {
 }
 .speciality {
   margin: 0;
+  margin-bottom: 16px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.socials-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--main-text-color);
+  background-color: #ffffff;
+}
+.socials-link:hover,
+.socials-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+.icon-social {
+  fill: currentColor;
 }
 /* Clients section */
 .clients-section {
@@ -323,17 +354,22 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   color: #afb1b8;
-}
-.icon-clients {
-  fill: currentColor;
+  background-color: #ffffff;
 }
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-text-color);
   color: var(--accent-text-color);
 }
+.icon-clients {
+  fill: currentColor;
+}
 
 /* Footer */
+.site-footer {
+  display: flex;
+  align-items: center;
+}
 .page-footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -341,6 +377,7 @@ body {
 }
 .site-address {
   font-style: normal;
+  margin-right: 70px;
 }
 .site-address .logo {
   display: block;
@@ -365,6 +402,41 @@ body {
   margin: 0;
   margin-bottom: 9px;
   color: var(--secondary-text-color);
+}
+/* Join */
+.join-text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+.footer-icon-social {
+  fill: currentColor;
 }
 
 /* Main content portfolio.html */
